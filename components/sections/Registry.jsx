@@ -72,8 +72,8 @@ function Registry({ num }) {
           Registry
         </H2>
         <p>
-          something something your presence is our present skjdfhksehksuef I dont fucking know how
-          to word this
+          something something your presence is our present skjdfhksehksuef I dont know how to word
+          this –bergen
         </p>
         <Link href={'https://www.zola.com/registry/bergenandjordan'} passHref>
           <a className='button' rel='noOpener' target={'_blank'}>
