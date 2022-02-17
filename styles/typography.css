@@ -1,0 +1,20 @@
+@import url('https://use.typekit.net/fuj4isr.css');
+@tailwind utilities;
+
+@layer utilities {
+  html,
+  body {
+    font-family: rustica, sans-serif;
+  }
+  h1 {
+    @apply font-bold;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  p {
+    @apply text-xl text-black text-opacity-75 max-w-4xl mb-3 mt-3 leading-relaxed;
+  }
+}
