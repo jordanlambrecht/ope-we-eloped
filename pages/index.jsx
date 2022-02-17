@@ -9,6 +9,7 @@ import Answers from '@sections/Answers'
 import Message from '@sections/Message'
 import OurStory from '@sections/OurStory'
 import Playlist from '@sections/Playlist'
+import Footer from '@sections/Footer'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Registry num={'05'} />
         <Playlist num={'06'} />
         <Answers num={'07'} />
+        <Footer />
       </main>
 
       <footer></footer>

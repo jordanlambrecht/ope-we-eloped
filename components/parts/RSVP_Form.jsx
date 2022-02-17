@@ -113,13 +113,6 @@ function RSVP() {
                     type='checkbox'
                     ref={register()}
                   />
-                  <span>
-                    I accept the{' '}
-                    <a className='text-blue-400 underline' href='/'>
-                      Terms and Conditions
-                    </a>
-                    .
-                  </span>
                 </div>
                 <div className='block mt-6'>
                   <input
@@ -128,13 +121,6 @@ function RSVP() {
                     type='checkbox'
                     ref={register()}
                   />
-                  <span>
-                    I accept the{' '}
-                    <a className='text-blue-400 underline' href='/'>
-                      Privacy Policy
-                    </a>
-                    .
-                  </span>
                 </div>
               </section>
             )}

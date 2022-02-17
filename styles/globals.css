@@ -5,10 +5,13 @@
 @layer base {
   html,
   body {
-    @apply p-0 m-0 bg-cream;
+    @apply p-0 bg-cream  w-screen overflow-x-hidden;
   }
 
   * {
     box-sizing: border-box;
+  }
+  .button {
+    @apply inline-block mt-12 font-medium rounded-md text-lg px-6 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95;
   }
 }

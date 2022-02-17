@@ -2,6 +2,7 @@ import H2 from '@typography/H2'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
 import H3 from '../typography/H3'
+import Link from 'next/link'
 
 function Details({ num }) {
   return (
@@ -15,9 +16,11 @@ function Details({ num }) {
           <p>
             <span className='font-semibold'>Riverview Lodge at Mahoney State Park.</span> The venue
             is located underneith the iconic lookout tower. &nbsp;
-            <a href='maps.google.com' target={'_blank'} rel='noopener'>
-              Here&apos;s a map
-            </a>
+            <Link href='maps.google.com' passHref>
+              <a target={'_blank'} rel='noopener'>
+                Here&apos;s a map
+              </a>
+            </Link>
             .
           </p>
         </div>
@@ -34,6 +37,13 @@ function Details({ num }) {
           <p>
             <span className='font-semibold'>Come as you are.</span> We want you to be comfortable.
             This is brunch, after all.{' '}
+          </p>
+        </div>
+        <div className='mb-12 mt-4 py-2'>
+          <H3>Lodging</H3>
+          <p>
+            <span className='font-semibold'>IDK yet.</span> Faith still needs to do research on
+            this.
           </p>
         </div>
       </InnerWrapper>
