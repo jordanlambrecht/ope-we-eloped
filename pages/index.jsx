@@ -10,6 +10,10 @@ import Message from '@sections/Message'
 import OurStory from '@sections/OurStory'
 import Playlist from '@sections/Playlist'
 import Footer from '@sections/Footer'
+import PageSection from '@parts/PageSection'
+
+import InnerWrapper from '@parts/InnerWrapper'
+import Spotify_Playlist from '@parts/Spotify_Playlist'
 
 export default function Home() {
   return (
@@ -28,6 +32,7 @@ export default function Home() {
         <OurStory num={'04'} />
         <Registry num={'05'} />
         <Playlist num={'06'} />
+
         <Answers num={'07'} />
         <Footer />
       </main>
