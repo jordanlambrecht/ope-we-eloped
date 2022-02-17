@@ -14,7 +14,7 @@ function Registry({ num }) {
           name or leave it anonymous. Feel free to fill it out multiple times.
         </p>
         <div className='py-6'>
-          <form className='grid grid-cols-1 gap-3'>
+          <form className='grid grid-cols-1 gap-3 max-w-2xl'>
             <input
               type={'text'}
               name='title'
