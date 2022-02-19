@@ -24,7 +24,7 @@ export default async function handler(req, res) {
   }))
 
   res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=43200')
-
+  console.log(response.status, response.statusText)
   return res.status(200).json({
     tracksSelected,
     tracks,
