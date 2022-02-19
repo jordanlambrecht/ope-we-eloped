@@ -6,7 +6,7 @@ import Spotify_Playlist from '@parts/Spotify_Playlist'
 function Registry({ num }) {
   return (
     <>
-      <PageSection color={'cream-light'}>
+      <PageSection color={'cream-dark'}>
         <InnerWrapper>
           <H2 before={num} color={'black'}>
             Playlist

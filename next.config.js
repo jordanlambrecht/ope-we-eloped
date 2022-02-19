@@ -1,5 +1,5 @@
 const React = require('react')
-
+const cn = require('classnames')
 module.exports = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,

@@ -32,7 +32,6 @@ export default function Home() {
         <OurStory num={'04'} />
         <Registry num={'05'} />
         <Playlist num={'06'} />
-
         <Answers num={'07'} />
         <Footer />
       </main>

@@ -4,7 +4,7 @@ import PageSection from '@parts/PageSection'
 
 function Registry({ num }) {
   return (
-    <PageSection color={'cream-light'}>
+    <PageSection color={'cream-dark'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Our Story
