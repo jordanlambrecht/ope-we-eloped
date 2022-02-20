@@ -17,7 +17,7 @@ function Registry({ num }) {
             eat the afformentioned hashbrowns. Remember, it&apos;s brunch, so there won&apos;t be a
             lot of dancing.{' '}
           </p>
-          <p className='italic text-sm'>
+          <p className='italic text-sm mt-2'>
             Note: any submission of the Chicken Dance, the Cha Cha Slide, or anything written by Ed
             Sheeran will result in immediate denial of entry at the event. Not really. But maybe.
           </p>

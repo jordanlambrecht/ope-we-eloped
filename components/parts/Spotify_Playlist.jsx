@@ -42,6 +42,7 @@ export default function Spotify_Playlist({ playlistID }) {
                   src={data.albumCoverImage}
                   layout='fill'
                   objectFit='cover'
+                  placeholder='blur'
                   blurDataURL={data.albumCoverImage}
                   quality={25}
                   className='w-full h-full absolute'

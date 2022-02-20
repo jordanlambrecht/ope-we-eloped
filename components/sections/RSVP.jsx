@@ -4,7 +4,7 @@ import PageSection from '@parts/PageSection'
 import RSVP_Form from '@parts/RSVP_Form'
 function Registry({ num }) {
   return (
-    <PageSection color={'cream'}>
+    <PageSection color={'cream'} className={'min-h-screen'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           RSVP
