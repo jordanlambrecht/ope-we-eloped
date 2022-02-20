@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Details({ num }) {
   return (
-    <PageSection color={'cream-dark'}>
+    <PageSection color={'cream'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Event Details
@@ -15,14 +15,19 @@ function Details({ num }) {
           <H3>Location</H3>
           <p>
             <span className='font-semibold'>Riverview Lodge at Mahoney State Park.</span> The venue
-            is located underneith the iconic lookout tower. &nbsp;
-            <Link href='maps.google.com' passHref>
-              <a target={'_blank'} rel='noopener'>
+            is located underneath the iconic lookout tower. &nbsp;
+            <Link href='https://goo.gl/maps/kd4RvQgaEET6jA2Z6' passHref>
+              <a
+                target={'_blank'}
+                rel='noopener'
+                className='border-b text-wine text-opacity-100 duration-300    hover:text-opacity-75'
+              >
                 Here&apos;s a map
               </a>
             </Link>
             .
           </p>
+          <p>28500 W Park Hwy, Ashland, NE 68003</p>
         </div>
         <div className='mb-12 mt-4 py-2'>
           <H3>Time &amp; Date</H3>

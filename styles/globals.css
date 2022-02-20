@@ -28,4 +28,8 @@
   .button {
     @apply inline-block mt-12 font-medium rounded-md text-lg px-6 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95;
   }
+
+  label.rsvp {
+    @apply flex flex-row justify-between duration-300 w-full px-4 self-center text-2xl cursor-pointer focus:ring-0 border-2 rounded-md py-4;
+  }
 }

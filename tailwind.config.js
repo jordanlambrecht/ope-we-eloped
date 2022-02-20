@@ -5,13 +5,19 @@ module.exports = {
       sage: 'rgb(121, 180, 183)',
       cream: {
         light: 'rgb(254, 251, 243)',
-        DEFAULT: 'rgb(248, 240, 223)',
-        dark: 'rgb(241, 236, 226)',
+        DEFAULT: 'rgb(241, 236, 226)',
       },
       grey: 'rgb(157, 157, 157)',
       black: 'rgb(38,38,38)',
     },
+
     extend: {
+      stroke: (theme) => theme('colors'),
+      fill: (theme) => theme('colors'),
+      fill: {
+        current: 'currentColor',
+        none: 'none',
+      },
       scale: {
         25: '.25',
         97: '.97',

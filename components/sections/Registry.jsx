@@ -66,7 +66,7 @@ function Registry({ num }) {
     return arr
   }
   return (
-    <PageSection color={'cream-dark'}>
+    <PageSection color={'cream'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Registry
@@ -91,9 +91,9 @@ function Registry({ num }) {
               subheader={"Bergen's Charity choice"}
             />
             <Registry_Card
-              img={'/img/charity.jpeg'}
+              img={'/img/CACLogotaggedcropped.png'}
               url={'https://www.zola.com/registry/collection-item/61bbe9b47788887cb5410139'}
-              header={'Charity Name'}
+              header={'Child Advocacy Center'}
               subheader={"Jordan's Charity choice"}
             />
           </div>
