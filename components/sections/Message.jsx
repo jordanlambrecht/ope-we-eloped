@@ -9,6 +9,17 @@ import H3 from '@typography/H3'
 function Message({ num }) {
   const [submitted, setSubmitted] = useState(false)
 
+  ///////////
+  // SENDGRID
+  ///////////
+  async function SendToSendgrid(data) {
+    console.log('sendgrid')
+    await fetch('/api/mail-story', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }).then((res) => res.json())
+  }
+
   //////////////////
   // REACT-HOOK-FORM
   //////////////////
@@ -34,7 +45,7 @@ function Message({ num }) {
       message: 'Make sure your email is entered correctly.',
     })
     console.log(data)
-    // SendToSendgrid(data)
+    SendToSendgrid(data)
     SendToMonday(data)
     // SendToMailchimp(data)
     // resetField('email')

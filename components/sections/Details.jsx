@@ -46,7 +46,7 @@ function Details({ num }) {
               <H3>Time &amp; Date</H3>
               <p>
                 <span className='font-semibold'>Saturday, April 9th, from 11am to 3:00pm ish.</span>{' '}
-                We do not plan on having a formal itenerary. You&apos;re welcome to arrive when you
+                We do not plan on having a formal itinerary. You&apos;re welcome to arrive when you
                 like and stay as long as you&apos;d like.
               </p>
             </div>

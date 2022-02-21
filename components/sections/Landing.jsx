@@ -2,17 +2,19 @@ import Image from 'next/image'
 
 function Landing() {
   return (
-    <section className='w-screen h-screen bg-black '>
+    <section className='w-screen h-screen bg-black relative'>
       <div className='absolute top-0 left-0 w-full h-full z-0'>
-        <Image
-          priority
-          placeholder='blur'
-          blurDataURL='/img/Haymarket-Lights-2.jpg'
-          src='/img/Haymarket-Lights-2.jpg'
-          layout='fill'
-          objectFit='cover'
-          alt='Jordan Lambrecht and Bergen Johnston in the haymarket lights alleyway in Lincoln, Nebraska'
-        />
+        <div className='relative w-full h-full top-0 left-0'>
+          <Image
+            priority
+            placeholder='blur'
+            blurDataURL='/img/Haymarket-Lights-2.jpg'
+            src='/img/Haymarket-Lights-2.jpg'
+            layout='fill'
+            objectFit='cover'
+            alt='Jordan Lambrecht and Bergen Johnston in the haymarket lights alleyway in Lincoln, Nebraska'
+          />
+        </div>
       </div>
       <div className='absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-0'></div>
       <div className='flex flex-col justify-end py-12 w-full h-full'>

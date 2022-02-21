@@ -71,7 +71,16 @@ function RSVP() {
       setFormStep((cur) => 3)
     } else setFormStep((cur) => cur - 1)
   }
-
+  ///////////
+  // SENDGRID
+  ///////////
+  async function SendToSendgrid(data) {
+    console.log('sendgrid')
+    await fetch('/api/mail-rsvp-confirmation', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }).then((res) => res.json())
+  }
   const onSubmit = (data) => {
     console.log(JSON.stringify(data, null, 2))
 
@@ -80,9 +89,12 @@ function RSVP() {
       setFormStep(4)
     } else {
       SendToMonday(data, attending, secondGuest, count)
+
       handleStepCompletion()
     }
-
+    if (attending) {
+      SendToSendgrid(data)
+    }
     resetField('firstguest_name')
     resetField('firstguest_attending')
 
@@ -759,6 +771,7 @@ function RSVP() {
                       Add to iCal
                     </a>
                   </p>
+                  <br />
                   <p className='border-b font-semibold inline-block'>
                     <a
                       target='_blank'
