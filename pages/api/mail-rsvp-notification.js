@@ -6,10 +6,10 @@ export default async function sendOnboarding(req, res) {
   const body = JSON.parse(req.body)
   console.log('Sendgrid API: ', body.email)
   const message = `
-  <p>A new story has been submitted. Here it is:</p>
+  <h2>Primary Guest</h2>
   <ul>
-  <li><strong>Story Title: </strong>${body.title}</li>
-  <li><strong>Author:</strong> ${body.author}</li>
+  <li><strong>Name: </strong>${body.firstguest_name}</li>
+  <li><strong>Author:</strong> ${body.firstguest_address}</li>
   </ul>
   <p><strong>story:</strong></p>
   <p>${body.story}</p>

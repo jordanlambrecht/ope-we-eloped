@@ -4,7 +4,8 @@ import { useForm } from 'react-hook-form'
 import { SendToMonday } from '@lib/monday_rsvp'
 
 import cn from 'classnames'
-const MAX_STEPS = 4
+import forms from '@tailwindcss/forms'
+const MAX_STEPS = 5
 const FinishSectionButton = ({ onClick, isdisabled, children }) => {
   return (
     <button
@@ -54,19 +55,24 @@ function RSVP() {
   })
 
   const handleStepCompletion = () => {
-    setFormStep((cur) => cur + 1)
+    if (!attending && formStep === 0) {
+      setFormStep(4)
+    } else if (attending) {
+      setFormStep((cur) => cur + 1)
+    }
   }
   const handleAdditionalGuestsStepCompletion = () => {
     setFormStepGuests(1)
     setFormStep(3)
   }
   const handleGoBackToPreviousStep = () => {
-    if (secondGuest && formStep === 3 && formStepGuests === 0) {
+    if (!attending && formStep === 4) {
+      setFormStep(0)
+    } else if (secondGuest && formStep === 3 && formStepGuests === 0) {
       setSecondGuest(false)
       setCount(1)
-      setFormStep((cur) => 3)
-    }
-    if (formStepGuests === 1 && formStep === 3) {
+      setFormStep((cur) => 2)
+    } else if (secondGuest && formStepGuests === 1 && formStep === 3) {
       setFormStepGuests(0)
       setFormStep((cur) => 3)
     } else setFormStep((cur) => cur - 1)
@@ -84,12 +90,11 @@ function RSVP() {
   const onSubmit = (data) => {
     console.log(JSON.stringify(data, null, 2))
 
-    if (!data.attending) {
+    if (!attending) {
       SendToMonday(data, attending, secondGuest, count)
-      setFormStep(4)
+      setFormStep(5)
     } else {
       SendToMonday(data, attending, secondGuest, count)
-
       handleStepCompletion()
     }
     if (attending) {
@@ -119,7 +124,7 @@ function RSVP() {
 
   return (
     <div className='max-w-xl w-full my-12 bg-cream rounded-md border-2 border-black mx-auto overflow-hidden z-10'>
-      {formStep < 5 && (
+      {formStep < 6 && (
         <div className='h-2 w-full bg-gray-200'>
           <div
             style={{ width: `${((formStep + 1) / (MAX_STEPS + 1)) * 100}%` }}
@@ -128,7 +133,7 @@ function RSVP() {
         </div>
       )}
       <div className='px-4 lg:px-16 py-10'>
-        {formStep < 4 && (
+        {formStep < 5 && (
           <div
             className={`flex ${
               formStep === 0 ? 'justify-end' : 'justify-between'
@@ -341,23 +346,11 @@ function RSVP() {
                 </div>
               )}
 
-              {attending ? (
-                <div className='flex justify-end'>
-                  <FinishSectionButton onClick={handleStepCompletion} isdisabled={!isValid}>
-                    next &rarr;
-                  </FinishSectionButton>
-                </div>
-              ) : (
-                <div className='flex justify-end'>
-                  <button
-                    type={'submit'}
-                    isdisabled={!isValid}
-                    className='cursor-pointer text-center inline-block mt-4 font-medium rounded-md text-lg px-10 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95 disabled:hover:scale-100 disabled:bg-opacity-30 '
-                  >
-                    Submit &rarr;
-                  </button>
-                </div>
-              )}
+              <div className='flex justify-end'>
+                <FinishSectionButton onClick={handleStepCompletion} isdisabled={!isValid}>
+                  next &rarr;
+                </FinishSectionButton>
+              </div>
             </section>
           )}
           {formStep >= 2 && (
@@ -487,14 +480,11 @@ function RSVP() {
                   <h2 className='font-medium text-3xl mb-8 text-black'>
                     Nothing wrong with riding solo 😉
                   </h2>
+
                   <div className='flex justify-end'>
-                    <button
-                      type={'submit'}
-                      disabled={!isValid}
-                      className='cursor-pointer text-center inline-block mt-4 font-medium rounded-md text-lg px-10 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95 disabled:hover:scale-100 disabled:bg-opacity-30 '
-                    >
-                      <span>Submit &rarr;</span>
-                    </button>
+                    <FinishSectionButton onClick={handleStepCompletion} isdisabled={!isValid}>
+                      next &rarr;
+                    </FinishSectionButton>
                   </div>
                 </div>
               ) : (
@@ -587,31 +577,6 @@ function RSVP() {
                     ) : (
                       ''
                     )}
-                    {/* <input
-                      type='tel'
-                      placeholder='Phone Number'
-                      id='secondguest_phone'
-                      required
-                      className=' w-1/2 text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream block px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black'
-                      {...register('secondguest_phone', {
-                        required: { message: 'Please enter their name.', value: true },
-                        minLength: { message: "c'mon that's not your name", value: 3 },
-                      })}
-                    />
-                    <input
-                      type='email'
-                      placeholder='Email'
-                      id='secondguest_email'
-                      className=' text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black'
-                      {...register('secondguest_email', {
-                        required: { message: 'Please enter your email.', value: true },
-                        pattern: {
-                          value:
-                            /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                          message: 'Invalid email address',
-                        },
-                      })}
-                    /> */}
                   </div>
                   <div className='flex justify-end'>
                     {count >= 5 ? (
@@ -622,13 +587,11 @@ function RSVP() {
                         Add More &rarr;
                       </FinishSectionButton>
                     ) : (
-                      <button
-                        type={'submit'}
-                        disabled={!isValid}
-                        className='cursor-pointer text-center inline-block mt-4 font-medium rounded-md text-lg px-10 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95 disabled:hover:scale-100 disabled:bg-opacity-30 '
-                      >
-                        <span>Submit &rarr;</span>
-                      </button>
+                      <div className='flex justify-end'>
+                        <FinishSectionButton onClick={handleStepCompletion} isdisabled={!isValid}>
+                          next &rarr;
+                        </FinishSectionButton>
+                      </div>
                     )}
                   </div>
                 </>
@@ -737,6 +700,30 @@ function RSVP() {
                 )}
               </div>
               <div className='flex justify-end'>
+                <FinishSectionButton onClick={handleStepCompletion} isdisabled={!isValid}>
+                  next &rarr;
+                </FinishSectionButton>
+              </div>
+            </section>
+          )}
+          {formStep === 4 && (
+            <section className={''}>
+              <h2 className='font-medium text-3xl mb-8 text-black'>Any Notes?</h2>
+              <textarea
+                placeholder='Optional'
+                name='notes'
+                id='notes'
+                rows={5}
+                className=' text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed
+                bg-cream
+                    block
+                    w-full
+
+                    border-2 border-gray-200 rounded-md px-6 py-3
+                    focus:ring-0 focus:border-black'
+                {...register('notes', {})}
+              />
+              <div className='flex justify-end'>
                 <button
                   type={'submit'}
                   disabled={!isValid}
@@ -747,7 +734,7 @@ function RSVP() {
               </div>
             </section>
           )}
-          {formStep >= 4 && (
+          {formStep >= 5 && (
             <section>
               <h2 className='font-semibold text-3xl mb-8'>Thank you for RSVPing!</h2>
               {!attending ? (

@@ -18,6 +18,9 @@ module.exports = {
         current: 'currentColor',
         none: 'none',
       },
+      maxWidth: {
+        '8xl': '88rem',
+      },
       scale: {
         25: '.25',
         97: '.97',

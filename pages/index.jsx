@@ -14,9 +14,6 @@ import Footer from '@sections/Footer'
 import PageSection from '@parts/PageSection'
 import Meta from '@parts/Meta'
 
-import InnerWrapper from '@parts/InnerWrapper'
-import Spotify_Playlist from '@parts/Spotify_Playlist'
-
 export default function Home() {
   return (
     <div>
@@ -40,7 +37,7 @@ export default function Home() {
 
       <main>
         <Landing />
-        <div className='flex flex-col justify-end py-12 w-full h-full font-black'>
+        <div className=' flex-col justify-end py-12 w-full h-full font-black  hidden sm:flex lg:hidden'>
           <h1 className=' self-center text-black xl:scale-125 pr-20  z-20'>
             <span className='block text-8xl'>Ope.</span>
             <span className='block text-right text-3xl -mr-16 relative'>We Eloped.</span>
