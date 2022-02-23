@@ -74,14 +74,16 @@ function Message({ num }) {
               name='title'
               placeholder='Story Title'
               required
-              className='col-span-1 text-black  w-full text-lg font-semibold border-0 rounded-md px-6 py-3 cursor-text'
+              className='col-span-1 text-black  w-full text-lg font-semibold border-2 rounded-md px-6 py-3 cursor-text   border-gray-200
+                    focus:ring-0 focus:border-black focus:border-2'
               {...register('title', {})}
             />
             <input
               type={'text'}
               name='author'
               placeholder='Author (optional)'
-              className='col-span-1 text-black text-opacity-75 w-full text-md font-normal italic border-0 rounded-md px-6 py-4 cursor-text'
+              className='col-span-1 text-black text-opacity-75 w-full text-md font-normal italic border-2 rounded-md px-6 py-4 cursor-text   border-gray-200
+                    focus:ring-0 focus:border-black'
               {...register('author', {})}
             />
 
@@ -90,7 +92,8 @@ function Message({ num }) {
               rows={6}
               placeholder='Story'
               required
-              className='text-black col-span-1 w-full text-md font-normal border-0 rounded-md px-6 py-4 cursor-text'
+              className='text-black col-span-1 w-full text-md font-normal border-2 rounded-md px-6 py-4 cursor-text  border-gray-200
+                    focus:ring-0 focus:border-black'
               {...register('story', {})}
             />
             <div className='col-span-1'>
