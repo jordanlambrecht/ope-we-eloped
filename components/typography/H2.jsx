@@ -3,7 +3,7 @@ import cn from 'classnames'
 // To override the bottom margin, you must prefix one of the classes with '2xl:'
 const H2 = ({ color, children, before, className }) => {
   return (
-    <div className='block md:mb-12 md:-ml-9'>
+    <div className='block mb-6 md:mb-12 md:-ml-9'>
       <span className='tracking-wider text-md block md:inline  align-top mr-4'>{before}</span>
       <h2
         className={cn(

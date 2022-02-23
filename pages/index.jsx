@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Script from 'next/script'
 // Sections
 import Landing from '@sections/Landing'
 import RSVP from '@sections/RSVP'
@@ -19,22 +19,22 @@ export default function Home() {
     <div>
       <Head>
         <title>Bergen + Jordan 4ever</title>
-        <meta charset='utf-8' />
-        <meta
-          name='description'
-          content='Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso; celebrating with lunch'
-        />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <meta
-          name='keywords'
-          content='Jordan Lambrecht, Bergen Johnston, Riverview Lodge, Mahoney State Park'
-        />
         <meta name='author' content='Jordan Lambrecht'></meta>
         <link rel='shortcut icon' href='/img/favicon.png' />
-        <meta property='og:image' content='     ' />
       </Head>
+      <Script src='https://www.googletagmanager.com/gtag/js?id=G-ZWPNDC86VY' />{' '}
+      <Script id='google-analytics' strategy='afterInteractive'>
+        {`
+          window.dataLayer = window.dataLayer || []
+          function gtag() {
+            dataLayer.push(arguments)
+          }
+          gtag('js', new Date())
+          gtag('config', 'G-ZWPNDC86VY')
+        `}
+      </Script>
       <Meta />
-
       <main>
         <Landing />
         <div className=' flex-col justify-end py-12 w-full h-full font-black  hidden sm:flex lg:hidden'>

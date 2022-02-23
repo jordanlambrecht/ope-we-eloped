@@ -2,10 +2,11 @@ import Image from 'next/image'
 
 function Landing() {
   return (
-    <section className='w-screen bg-cream-light max-h-screen relative mt-0 px-14  py-24'>
+    <section className='w-screen bg-cream-light max-h-screen relative mt-0 px-14  py-24 coco'>
       <div className='max-w-2xl md:max-w-xl lg:max-w-8xl mx-auto'>
         <h1 className=' font-semibold tracking-widest text-black text-2xl sm:text-4xl md:text-4xl '>
-          Bergen + Jordan / 04.09.2022
+          Bergen + Jordan <span className='hidden md:inline'>&nbsp;</span>{' '}
+          <span className='hidden md:inline'>&nbsp;</span> 04.09.2022
         </h1>
 
         <div className='max-h-screen grid grid-cols-2 lg:grid-cols-4 gap-1 mt-8 '>
