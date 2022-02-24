@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import cn from 'classnames'
-function Button_Filled_LArrow({ url, text, className }) {
+function Button_Filled_LArrow({ url, text }) {
   return (
     <Link href={url} passHref>
       <a
@@ -13,5 +13,4 @@ function Button_Filled_LArrow({ url, text, className }) {
     </Link>
   )
 }
-
 export default Button_Filled_LArrow

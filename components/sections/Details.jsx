@@ -2,8 +2,6 @@ import H2 from '@typography/H2'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
 import H3 from '../typography/H3'
-import Link from 'next/link'
-import Image from 'next/image'
 import Button_Filled from '@parts/Button_Filled'
 function Details({ num }) {
   return (
@@ -13,17 +11,6 @@ function Details({ num }) {
           Event Details
         </H2>
         <div className='grid grid-cols-5 gap-14 mt-8'>
-          {/* <div className='block md:hidden xl:block col-span-5 md:col-span-2 aspect-w-1 aspect-h-1 w-full relative'>
-            <Image
-              placeholder='blur'
-              blurDataURL='/img/PolaroidStack.jpeg'
-              src={'/img/PolaroidStack.jpeg'}
-              alt={'Jordan Lambrecht and Bergen Johnston stack of polaroids'}
-              layout={'fill'}
-              objectFit={'contain'}
-              className={'object-top'}
-            />
-          </div> */}
           <div className='col-span-5 md:col-span-4 xl:grid-cols-3 pt-0 mt-0'>
             <div className='mb-12 mt-0 pt-0 pb-2'>
               <H3>When + Where</H3>

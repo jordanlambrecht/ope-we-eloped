@@ -1,24 +1,9 @@
 import H2 from '@typography/H2'
-import { useRef, useEffect } from 'react'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
 import Link from 'next/link'
-import gsap from 'gsap'
-
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 function Registry({ num }) {
-  // let q = gsap.utils.selector(el)
-  // const tl = gsap.timeline({
-  //   // yes, we can add it to an entire timeline!
-  //   scrollTrigger: {
-  //     trigger: triggerRef.current,
-  //     start: 'top center',
-  //     toggleActions: 'play none none reverse',
-  //     markers: true,
-  //   },
-  // })
-
   return (
     <PageSection color={'cream-light'}>
       <InnerWrapper>

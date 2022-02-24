@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 import cn from 'classnames'
 import { SendToMonday } from '@lib/monday'
-import H3 from '@typography/H3'
 function Message({ num }) {
   const [submitted, setSubmitted] = useState(false)
 

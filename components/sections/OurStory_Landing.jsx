@@ -6,7 +6,6 @@ function OurStory_Landing() {
   let el = useRef()
   let q = gsap.utils.selector(el)
 
-  // only runs on first render
   useEffect(() => {
     gsap.set(q('.fadeIn'), { y: -5 })
     gsap.to(q('.fadeIn'), {

@@ -1,12 +1,11 @@
 import Image from 'next/image'
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 
 function Landing() {
   let el = useRef()
   let q = gsap.utils.selector(el)
 
-  // only runs on first render
   useEffect(() => {
     gsap.set(q('.fadeIn'), { y: 10 })
     gsap.to(q('.fadeIn'), {
@@ -20,13 +19,6 @@ function Landing() {
     })
     return () => {}
   })
-
-  // runs on every render
-
-  // useEffect(() => {
-  //   // uses el.current.querySelectorAll() internally
-  //   gsap.to(fadeIn, { autoAlpha: 1, stagger: 0.25 })
-  // }, [])
   return (
     <section className='w-screen bg-cream-light max-h-screen relative mt-0 px-14  py-24 coco'>
       <div className='max-w-2xl md:max-w-xl lg:max-w-8xl mx-auto' ref={el}>

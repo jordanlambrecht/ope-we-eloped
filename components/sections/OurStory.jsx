@@ -5,7 +5,7 @@ import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
 
 import Link from 'next/link'
-function OurStory({ num }) {
+function OurStory({}) {
   return (
     <PageSection color={'black'}>
       <InnerWrapper>
@@ -13,13 +13,13 @@ function OurStory({ num }) {
           <span className='tracking-wider text-md block md:inline text-cream-light align-top mr-4'>
             01
           </span>
-          <h2
+          <H2
             className={cn(
               'tracking-wide lg:tracking-wider align-top block md:inline font-semibold max-w-md mt-0 text-5xl sm:text-5xl md:text-6xl 2xl:text-7xl 2xl:max-w-3xl leading-none md:mb-12 2xl:mb-20 pt-0 text-cream-light',
             )}
           >
             Our Story
-          </h2>
+          </H2>
         </div>
 
         <div className='mt-12'>
