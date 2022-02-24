@@ -9,7 +9,10 @@ const Meta = () => {
         description='Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso; celebrating with lunch.'
         openGraph={{
           url: 'https://www.opeweeloped.us',
-          title: 'Bergen + Jordan 4Ever',
+          type: 'website',
+          locale: 'en_IE',
+          site_name: 'Bergen + Jordan 4Ever',
+          title: 'Home',
           description:
             'Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso; celebrating with lunch.',
           images: [
@@ -28,7 +31,6 @@ const Meta = () => {
           cardType: 'summary_large_image',
         }}
       />
-      <script></script>
     </>
   )
 }

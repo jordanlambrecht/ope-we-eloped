@@ -1,9 +1,24 @@
 import H2 from '@typography/H2'
+import { useRef, useEffect } from 'react'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
 import Link from 'next/link'
+import gsap from 'gsap'
+
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 function Registry({ num }) {
+  // let q = gsap.utils.selector(el)
+  // const tl = gsap.timeline({
+  //   // yes, we can add it to an entire timeline!
+  //   scrollTrigger: {
+  //     trigger: triggerRef.current,
+  //     start: 'top center',
+  //     toggleActions: 'play none none reverse',
+  //     markers: true,
+  //   },
+  // })
+
   return (
     <PageSection color={'cream-light'}>
       <InnerWrapper>
@@ -14,7 +29,7 @@ function Registry({ num }) {
           Gifts are not expected and we are just excited to have you join us. We don’t have a formal
           registry, but you can contribute to cash funds if you’d like! These are set up via
           Zola.com and have been designated for things like our honeymoon, Jordan’s DIY Home Depot
-          excursions & vet bills for our zoo (SOS).{' '}
+          excursions &amp; vet bills for our zoo (SOS).{' '}
         </p>
         <p className='mb-6'>
           You’ll also see the option to donate to some organizations that are important to us, which

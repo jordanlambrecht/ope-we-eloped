@@ -29,7 +29,7 @@ function OurStory({ num }) {
           </p>
           <Link href={'/story'} passHref>
             <a>
-              <div className='mt-16 text-cream-light max-w-xs hover:scale-99 cursor-pointer'>
+              <div className='mt-16 text-cream-light max-w-xs hover:scale-99 duration-300 cursor-pointer'>
                 <span className='italic '>Read More</span>
                 <svg
                   id='a966fc3c-c7a0-40ed-b540-d6b7a9c610ea'
