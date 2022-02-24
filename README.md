@@ -4,7 +4,7 @@
 
 ## Stories Section
 
-This section uses the react-hook-form react library to gather the form data and pass it up the chain. I use Monday.com to gather the information. You could eaisly use sendgrid instead to simply email the submissions to yourself instead. I believe monday has a free version.
+This section uses the react-hook-form react library to gather the form data and pass it up the chain. I use Monday.com to gather the information. You could easily use sendgrid instead to simply email the submissions to yourself instead. I believe monday has a free version.
 
 ## Environment Variables
 
