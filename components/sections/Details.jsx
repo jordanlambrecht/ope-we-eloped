@@ -53,16 +53,15 @@ function Details({ num }) {
               </p>
             </div>
             <div className='mb-12 mt-4 py-2'>
-              <H3>Where to stay</H3>
+              <H3>Where to Stay</H3>
               <p>
                 There are lots of options since our venue is located about 20 mins from Omaha and 30
-                mins from Lincoln! We&apos;ve compiled a map of some of our favorite local hotels,
-                bars, activities, and restaurants below.
+                mins from Lincoln, so, there are lots of options!
               </p>
               <div className='mb-8'>
                 <Button_Filled
                   url='https://www.google.com/maps/d/u/0/viewer?mid=1XT2guC9u4MREqhCfFnRm-YZifr6nO4CL&ll=41.03007602339994%2C-96.31491595&z=10'
-                  text='stuff to do & places to stay'
+                  text='Stuff to Do & Places to Stay'
                 />
               </div>
             </div>

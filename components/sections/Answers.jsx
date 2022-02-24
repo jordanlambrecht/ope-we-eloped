@@ -4,7 +4,7 @@ import PageSection from '@parts/PageSection'
 import Image from 'next/image'
 function Registry({ num }) {
   return (
-    <PageSection color={'cream'}>
+    <PageSection color={'cream-light'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Answers
@@ -34,29 +34,6 @@ function Registry({ num }) {
             <p className='mt-1'>Probably.</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
-              What’s the deal with covid-19?
-            </p>
-            <p className='mb-6'>
-              We will be following{' '}
-              <a
-                href='https://visitnebraska.com/coronavirus-information'
-                target={'_blank'}
-                rel='noreferrer'
-                className='border-b hover:text-opacity-75'
-              >
-                current health guidelines
-              </a>{' '}
-              for Lincoln &amp; Omaha at our event. Guidelines change quickly, so check back for
-              updates! Masks will be provided. Vaccinations are strongly recommended (duh).
-            </p>
-            <p className=''>
-              We understand & respect that not everyone will feel comfortable attending an event
-              right now. We love you and we will be excited to celebrate with you whenever and
-              however you feel comfortable.
-            </p>
-          </li>
-          <li>
             <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Photographer?</p>{' '}
             <p className='mt-1'>
               <a
@@ -73,31 +50,42 @@ function Registry({ num }) {
             <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
               Is there anything to do in Nebraska?
             </p>
-            <p className='mt-1'>
-              Yes -- attend our brunch. But
-              <a
-                href='https://www.google.com/maps/d/u/0/viewer?mid=1XT2guC9u4MREqhCfFnRm-YZifr6nO4CL&ll=41.03007602339994%2C-96.31491595&z=10'
-                target={'_blank'}
-                rel='noreferrer'
-                className='border-b hover:text-opacity-75'
-              >
-                {' '}
-              </a>
-              are some options for things to do and places to stay while you’re here.
-            </p>
+            <p className='mt-1'>Yes – attend our brunch. See section above.</p>
           </li>
           <li>
             <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
-              McDonalds Hashbrowns?
+              McDonald&apos;s Hashbrowns?
             </p>
             <p className='mt-1'>Yes.</p>
           </li>
-
           <li>
             <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
               Awkward Glass Clinking?
             </p>{' '}
             <p className='mt-1'>No.</p>
+          </li>
+          <li>
+            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
+              What’s the deal with covid-19?
+            </p>
+            <p className='mb-6'>
+              We will be following{' '}
+              <a
+                href='https://visitnebraska.com/coronavirus-information'
+                target={'_blank'}
+                rel='noreferrer'
+                className='border-b hover:text-opacity-75'
+              >
+                current health guidelines
+              </a>{' '}
+              for Lincoln &amp; Omaha at our event. Guidelines change quickly, so check back for
+              updates! Masks will be provided. Vaccinations are strongly recommended.
+            </p>
+            <p className=''>
+              We understand &amp; respect that not everyone will feel comfortable attending an event
+              right now. We love you and we will be excited to celebrate with you whenever and
+              however you feel comfortable.
+            </p>
           </li>
         </ul>
       </InnerWrapper>

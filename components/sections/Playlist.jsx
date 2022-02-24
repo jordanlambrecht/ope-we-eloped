@@ -11,15 +11,11 @@ function Registry({ num }) {
           <H2 before={num} color={'black'}>
             Playlist
           </H2>
-          <p>
-            We spent too much money on hashbrowns and can&apos;t afford a legetiment DJ, so
-            we&apos;re crowd-sourcing our music instead. Add some tracks for us to play while we all
-            eat the afformentioned hashbrowns. Remember, it&apos;s brunch, so there won&apos;t be a
-            lot of dancing.{' '}
-          </p>
+          <p>Choose your own adventure. Add some brunch-y tracks for us to play</p>
           <p className='italic text-sm mt-2'>
-            Note: any submission of the Chicken Dance, the Cha Cha Slide, or anything written by Ed
-            Sheeran will result in immediate denial of entry at the event. Not really. But maybe.
+            Note: Any submissions of the &apos;Chicken Dance,&apos; the &apos;Cha Cha Slide,&apos;
+            or anything written by Ed Sheeran will result in immediate denial of entry at the event.
+            Not really. But maybe.
           </p>
         </InnerWrapper>
         <InnerWrapper className='max-h-screen py-8 sm:py-20'>

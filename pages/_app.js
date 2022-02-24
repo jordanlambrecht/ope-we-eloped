@@ -4,7 +4,7 @@ import Script from 'next/script'
 import Head from 'next/head'
 function MyApp({ Component, pageProps }) {
   console.log(
-    'Created by Jordan Lambrecht and Bergen Johnston in Lincoln, Nebraska.  This code is open-sourced in 2022 under an MIT licenes. The original github repo can be found here: https://github.com/jordanlambrecht/ope-we-eloped',
+    'Created by Jordan Lambrecht and Bergen Johnston in Lincoln, Nebraska. This code was open-sourced in 2022 under an MIT licenes. The original github repo can be found here: https://github.com/jordanlambrecht/ope-we-eloped',
   )
   console.log('#BlackLivesMatter #ACAB')
   return (

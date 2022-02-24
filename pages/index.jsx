@@ -29,14 +29,16 @@ export default function Home() {
             <span className='block text-right text-3xl -mr-16 relative'>We Eloped.</span>
           </h1>
         </div>
-        <RSVP num={'01'} />
-        <Details num={'02'} />
-        <Message num={'03'} />
+        <OurStory num={'01'} />
+
+        <RSVP num={'02'} />
+        <Details num={'03'} />
         <Answers num={'04'} />
 
-        <OurStory num={'05'} />
-        <Registry num={'06'} />
-        <Playlist num={'07'} />
+        <Message num={'04'} />
+
+        <Registry num={'05'} />
+        <Playlist num={'06'} />
         <Photos />
         <Footer />
       </main>

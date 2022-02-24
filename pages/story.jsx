@@ -60,7 +60,7 @@ function OurStory() {
             <div>
               <p className='font-semibold italic'>Bergen:</p>
               <p className='mb-6'>
-                Right before I left my house, I had shared my location with a close friend (as
+                Right before I left my house, I shared my location with a close friend (as
                 millennials do). I texted her to say that I was going on a date but definitely not
                 looking for anything serious.{' '}
               </p>
@@ -74,9 +74,9 @@ function OurStory() {
               <p className='mt-12 font-semibold italic'>Jordan:</p>
               <p className='mb-6'>
                 I knew from the second I pulled up to the bar and the tiniest human in the world got
-                out of her equally small Honda Fit. The first thought that popped into my head was
-                “Wow, she Reverse Catfished me with those terrible Tinder photos”. The second was,
-                “This is the most radiant woman I’ve ever seen in my life”. I mean, yeah, she’s
+                out of her equally small Honda Fit. The first thought that popped into my head was,
+                “wow, she reverse-catfished me with those terrible Tinder photos." The second was,
+                “This is the most radiant woman I’ve ever seen in my life." I mean, yeah, she’s
                 stupidly hot, but that wasn’t necessarily the origin of the thought.
               </p>
               <p className='mb-6'>
@@ -84,10 +84,10 @@ function OurStory() {
                 of personality flavors, but there’s a rare kind that I’ve only come across a handful
                 of times in my life. It had bothered me for years trying to figure out how to define
                 it, but it clicked the moment I met her. The closest term I’ve been able to find to
-                define it is the French phrase ‘Joie De Vivre’, an exultation of spirit. When you
-                look into her eyes long enough, there’s a flame. Bergen is a tiny human with a
-                booming life force. It was as if there was an invisible, swirling energy manifesting
-                outwards from an incredible presence.{' '}
+                define it is the French phrase ‘Joie De Vivre’, which means an exultation of spirit.
+                When you look into her eyes long enough, there’s a flame. Bergen is a tiny human
+                with a booming life force. It was as if there was an invisible, swirling energy
+                manifesting outwards from an incredible presence.{' '}
               </p>
               <p className='mb-6'>
                 You’d think that would equate to some boisterous tank of a human, but it doesn’t.
@@ -105,6 +105,26 @@ function OurStory() {
       </PageSection>
       <PageSection color='cream-light'>
         <div className='max-h-screen grid grid-cols-2 lg:grid-cols-4 gap-1 mt-8 '>
+          <div className='relative w-full aspect-w-1 aspect-h-1'>
+            <Image
+              placeholder='blur'
+              blurDataURL={'/img/bergen-jordan-courthouse-5.jpg'}
+              src={'/img/bergen-jordan-courthouse-5.jpg'}
+              alt={'Jordan Lambrecht and Bergen Johnston'}
+              layout={'fill'}
+              objectFit={'cover'}
+            />
+          </div>
+          <div className='relative w-full aspect-w-1 aspect-h-1'>
+            <Image
+              placeholder='blur'
+              blurDataURL={'/img/bergen-jordan-courthouse-3s.jpg'}
+              src={'/img/bergen-jordan-courthouse-3.jpg'}
+              alt={'Jordan Lambrecht and Bergen Johnston'}
+              layout={'fill'}
+              objectFit={'cover'}
+            />
+          </div>
           <div className='relative w-full aspect-square'>
             <Image
               placeholder='blur'
@@ -118,27 +138,7 @@ function OurStory() {
           <div className='relative w-full aspect-w-1 aspect-h-1'>
             <Image
               placeholder='blur'
-              blurDataURL={'bergen-jordan-courthouse-1.jpg'}
-              src={'/img/bergen-jordan-courthouse-2.jpg'}
-              alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
-            />
-          </div>
-          <div className='relative w-full aspect-w-1 aspect-h-1'>
-            <Image
-              placeholder='blur'
-              blurDataURL={'bergen-jordan-courthouse-1.jpg'}
-              src={'/img/bergen-jordan-courthouse-3.jpg'}
-              alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
-            />
-          </div>
-          <div className='relative w-full aspect-w-1 aspect-h-1'>
-            <Image
-              placeholder='blur'
-              blurDataURL={'bergen-jordan-courthouse-1.jpg'}
+              blurDataURL={'bergen-jordan-courthouse-4.jpg'}
               src={'/img/bergen-jordan-courthouse-4.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               layout={'fill'}
@@ -168,7 +168,7 @@ function OurStory() {
                 We texted 2 close friends and asked if they could meet us at the courthouse. We
                 provided them with zero context, and they both showed up anyway, with no questions
                 asked (except for “is it fine if I’m wearing jeans?”). We got married at 4:30pm.
-                Mike bought us burrito bowls at Chipotle.{' '}
+                Mike bought us burrito bowls at Chipotle for dinner.{' '}
               </p>
               <p>Best Monday, ever.</p>
             </div>
@@ -176,7 +176,7 @@ function OurStory() {
               <p className='mt-12 font-semibold italic'>Jordan:</p>
               <p className='mb-6'>
                 Bergen is leaving out a critical part for my benefit. What she didn&apos;t mention
-                is that I was having one of, not even exaggerating, the worse days of my life
+                is that I was having one of – not even exaggerating – the worst days of my life.
               </p>
               <p className='mb-6'>
                 That&apos;s the kind of person she is and it&apos;s one of the things I love the

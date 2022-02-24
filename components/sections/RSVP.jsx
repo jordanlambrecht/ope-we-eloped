@@ -7,8 +7,13 @@ function Registry({ num }) {
     <PageSection color={'cream'} className={'min-h-screen'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
-          RSVP / Join Us for Brunch!
+          RSVP
         </H2>
+        <p className='text-4xl mb-4 font-semibold'>
+          Join us for Brunch on
+          <br />
+          April 9th at 11am to 3pm
+        </p>
         <RSVP_Form />
       </InnerWrapper>
     </PageSection>

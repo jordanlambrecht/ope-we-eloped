@@ -55,13 +55,13 @@ function Message({ num }) {
 
   //////////////////
   return (
-    <PageSection color={'cream-light'}>
+    <PageSection color={'cream'}>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Memories
         </H2>
         <p>
-          Tell us your favorite memory or moment you have of Jordan/Bergen/Both. You can write your
+          Tell us your favorite memory or moment you have of Jordan/Bergen/both. You can write your
           name or leave it anonymous. Feel free to fill it out multiple times.
         </p>
         <div className='py-6'>

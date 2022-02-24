@@ -7,7 +7,7 @@ function Footer() {
       <PageSection>
         <InnerWrapper>
           <p className='max-w-2xl'>
-            This site was hand-built by Jordan, who fundamentally believes in open and accessible
+            This site was built by hand by Jordan, who fundamentally believes in open and accessible
             education. As such, you&apos;re welcome to reuse, steal, and learn from the code{' '}
             <Link href='https://github.com/jordanlambrecht/ope-we-eloped' passHref>
               <a
