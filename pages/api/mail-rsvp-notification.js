@@ -9,10 +9,13 @@ export default async function sendOnboarding(req, res) {
   <h2>Primary Guest</h2>
   <ul>
   <li><strong>Name: </strong>${body.firstguest_name}</li>
-  <li><strong>Author:</strong> ${body.firstguest_address}</li>
+  <li><strong>RSVP: </strong>${body.attending}</li>
+  <li><strong>address:</strong> ${body.firstguest_address}</li>
+  <li><strong>phone:</strong> ${body.firstguest_phone}</li>
+  <li><strong>email:</strong> ${body.firstguest_email}</li>
   </ul>
-  <p><strong>story:</strong></p>
-  <p>${body.story}</p>
+  <p><strong>notes:</strong></p>
+  <p>${body.notes}</p>
   `
 
   await mail.send({

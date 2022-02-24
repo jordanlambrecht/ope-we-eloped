@@ -11,7 +11,6 @@ import OurStory from '@sections/OurStory'
 import Playlist from '@sections/Playlist'
 import Photos from '@sections/Photos'
 import Footer from '@sections/Footer'
-import PageSection from '@parts/PageSection'
 import Meta from '@parts/Meta'
 
 export default function Home() {
@@ -19,21 +18,8 @@ export default function Home() {
     <div>
       <Head>
         <title>Bergen + Jordan 4ever</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <meta name='author' content='Jordan Lambrecht'></meta>
-        <link rel='shortcut icon' href='/img/favicon.png' />
       </Head>
-      <Script src='https://www.googletagmanager.com/gtag/js?id=G-ZWPNDC86VY' />{' '}
-      <Script id='google-analytics' strategy='afterInteractive'>
-        {`
-          window.dataLayer = window.dataLayer || []
-          function gtag() {
-            dataLayer.push(arguments)
-          }
-          gtag('js', new Date())
-          gtag('config', 'G-ZWPNDC86VY')
-        `}
-      </Script>
+
       <Meta />
       <main>
         <Landing />
@@ -46,10 +32,11 @@ export default function Home() {
         <RSVP num={'01'} />
         <Details num={'02'} />
         <Message num={'03'} />
-        <OurStory num={'04'} />
-        <Registry num={'05'} />
-        <Playlist num={'06'} />
-        <Answers num={'07'} />
+        <Answers num={'04'} />
+
+        <OurStory num={'05'} />
+        <Registry num={'06'} />
+        <Playlist num={'07'} />
         <Photos />
         <Footer />
       </main>

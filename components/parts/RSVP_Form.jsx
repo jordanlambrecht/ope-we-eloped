@@ -86,6 +86,10 @@ function RSVP() {
       method: 'POST',
       body: JSON.stringify(data),
     }).then((res) => res.json())
+    await fetch('/api/mail-rsvp-notification', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }).then((res) => res.json())
   }
   const onSubmit = (data) => {
     console.log(JSON.stringify(data, null, 2))

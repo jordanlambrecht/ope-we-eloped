@@ -6,8 +6,8 @@ function Photos() {
   return (
     <PageSection>
       <InnerWrapper>
-        <div className=' h-full grid grid-cols-2 md:grid-cols-4 gap-2'>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative '>
+        <div className=' h-full grid grid-cols-2 md:grid-cols-4 gap-2 '>
+          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale '>
             <Image
               placeholder='blur'
               blurDataURL={'/img/jordan-bergen-snow-1.jpg'}
@@ -17,27 +17,27 @@ function Photos() {
               objectFit={'cover'}
             />
           </div>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative '>
+          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
             <Image
               placeholder='blur'
-              blurDataURL={'/img/jordan-bergen-snow-4.jpg'}
+              blurDataURL={'/img/jordan-bergen-snow-4.jpg grayscale'}
               src={'/img/jordan-bergen-snow-4.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston in the snow'}
               layout={'fill'}
               objectFit={'cover'}
             />
           </div>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative '>
+          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
             <Image
               placeholder='blur'
-              blurDataURL={'/img/jordan-bergen-snow-2.jpg'}
+              blurDataURL={'/img/jordan-bergen-snow-2.jpg grayscale'}
               src={'/img/jordan-bergen-snow-2.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston in the snow'}
               layout={'fill'}
               objectFit={'cover'}
             />
           </div>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative '>
+          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
             <Image
               placeholder='blur'
               blurDataURL={'/img/jordan-bergen-snow-3.jpg'}
