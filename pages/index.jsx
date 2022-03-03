@@ -6,7 +6,7 @@ import RSVP from '@sections/RSVP'
 import Registry from '@sections/Registry'
 import Details from '@sections/Details'
 import Answers from '@sections/Answers'
-import Message from '@sections/Message'
+import Memories from '@sections/Memories'
 import OurStory from '@sections/OurStory'
 import Playlist from '@sections/Playlist'
 import Photos from '@sections/Photos'
@@ -30,15 +30,13 @@ export default function Home() {
           </h1>
         </div>
         <OurStory num={'01'} />
-
-        <RSVP num={'02'} />
-        <Details num={'03'} />
+        <Details num={'02'} />
+        <RSVP num={'03'} />
         <Answers num={'04'} />
-
-        <Message num={'04'} />
-
         <Registry num={'05'} />
-        <Playlist num={'06'} />
+
+        <Memories num={'06'} />
+        <Playlist num={'07'} />
         <Photos />
         <Footer />
       </main>

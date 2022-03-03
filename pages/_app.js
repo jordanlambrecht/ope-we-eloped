@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import '../styles/typography.css'
 import Script from 'next/script'
 import Head from 'next/head'
+import Navigation from 'components/Navigation'
 function MyApp({ Component, pageProps }) {
   console.log(
     'Created by Jordan Lambrecht and Bergen Johnston in Lincoln, Nebraska. This code was open-sourced in 2022 under an MIT licenes. The original github repo can be found here: https://github.com/jordanlambrecht/ope-we-eloped',
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-ZWPNDC86VY')
         `}
       </Script>
+      <Navigation />
       <Component {...pageProps} />
     </>
   )

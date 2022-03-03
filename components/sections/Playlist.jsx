@@ -5,7 +5,7 @@ import Spotify_Playlist from '@parts/Spotify_Playlist'
 
 function Registry({ num }) {
   return (
-    <PageSection color={'cream'}>
+    <PageSection color={'cream'} id='playlist'>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Playlist
@@ -17,7 +17,7 @@ function Registry({ num }) {
           really. But maybe.
         </p>
       </InnerWrapper>
-      <InnerWrapper className='max-h-screen py-8 sm:py-20'>
+      <InnerWrapper className=' py-8 sm:py-20'>
         <Spotify_Playlist />
       </InnerWrapper>
     </PageSection>

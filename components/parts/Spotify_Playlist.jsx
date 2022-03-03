@@ -12,7 +12,7 @@ export default function Spotify_Playlist() {
     return null
   }
   return (
-    <div className='border-2 border-black rounded-md h-full py-4 flex flex-col px-4'>
+    <div className='border-2 border-black rounded-md py-4 flex flex-col px-4'>
       <div className='flex flex-col md:flex-row gap-4 px-3 md:gap-12 md:my-4 md:pt-4'>
         <div className='flex-row'>
           <Link href={data.external_urls.spotify} passHref>
@@ -59,8 +59,8 @@ export default function Spotify_Playlist() {
           </div>
         </div>
       </div>
-      <div className='bg-cream py-3 h-full overflow-auto'>
-        <div className='changeScrollbar h-full overflow-y-scroll bg-cream px-1 md:px-4 '>
+      <div className='bg-cream py-3 first-letter:overflow-hidden '>
+        <div className='changeScrollbar  scroll-smooth max-h-80 overflow-y-scroll bg-cream px-1 md:px-4 '>
           <ul className='grid gap-3 md:gap-2'>
             {data.tracksSelected.map((track, index) => (
               <li key={index} className='my-0'>
@@ -68,8 +68,6 @@ export default function Spotify_Playlist() {
                   <a target={'_blank'}>
                     <div className='flex gap-4 md:gap-x-4'>
                       <Image
-                        placeholder='blur'
-                        blurDataURL={track.albumArt}
                         quality={50}
                         layout='fixed'
                         height={32}

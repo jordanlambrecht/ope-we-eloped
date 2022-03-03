@@ -5,7 +5,7 @@ import H3 from '../typography/H3'
 import Button_Filled from '@parts/Button_Filled'
 function Details({ num }) {
   return (
-    <PageSection color={'cream'}>
+    <PageSection color={'cream'} id='details'>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Event Details

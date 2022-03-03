@@ -4,7 +4,7 @@ import PageSection from '@parts/PageSection'
 import Image from 'next/image'
 function Registry({ num }) {
   return (
-    <PageSection color={'cream-light'}>
+    <PageSection color={'cream-light'} id='answers'>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Answers

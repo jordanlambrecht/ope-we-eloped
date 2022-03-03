@@ -7,7 +7,7 @@ import PageSection from '@parts/PageSection'
 import Link from 'next/link'
 function OurStory({}) {
   return (
-    <PageSection color={'black'}>
+    <PageSection color={'black'} id='our-story'>
       <InnerWrapper>
         <div className='block mb-6 md:mb-12 md:-ml-9'>
           <span className='tracking-wider text-md block md:inline text-cream-light align-top mr-4'>

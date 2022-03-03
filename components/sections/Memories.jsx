@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 import cn from 'classnames'
 import { SendToMonday } from '@lib/monday'
-function Message({ num }) {
+function Memories({ num }) {
   const [submitted, setSubmitted] = useState(false)
 
   ///////////
@@ -54,7 +54,7 @@ function Message({ num }) {
 
   //////////////////
   return (
-    <PageSection color={'cream'}>
+    <PageSection color={'cream'} id='memories'>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Memories
@@ -119,4 +119,4 @@ function Message({ num }) {
     </PageSection>
   )
 }
-export default Message
+export default Memories
