@@ -12,9 +12,10 @@ function OurStory() {
   return (
     <main>
       <Head>
+        <title>Our Story</title>
         <NextSeo
           title='Our Story'
-          description='Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso; celebrating with lunch.'
+          description='Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso;re celebrating with lunch.'
           openGraph={{
             url: 'https://www.opeweeloped.us',
             title: 'Our Story',
