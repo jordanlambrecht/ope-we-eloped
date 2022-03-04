@@ -106,8 +106,8 @@ function OurStory() {
               <p className='mb-6'>
                 I knew from the second I pulled up to the bar and the tiniest human in the world got
                 out of her equally small Honda Fit. The first thought that popped into my head was,
-                “wow, she reverse-catfished me with those terrible Tinder photos." The second was,
-                “This is the most radiant woman I’ve ever seen in my life." I mean, yeah, she’s
+                ”wow, she reverse-catfished me with those terrible Tinder photos.” The second was,
+                ”This is the most radiant woman I’ve ever seen in my life.” I mean, yeah, she’s
                 stupidly hot, but that wasn’t necessarily the origin of the thought.
               </p>
               <p className='mb-6'>
@@ -118,7 +118,7 @@ function OurStory() {
                 define it is the French phrase ‘Joie De Vivre’, which means an exultation of spirit.
                 When you look into her eyes long enough, there’s a flame. Bergen is a tiny human
                 with a booming life force. It was as if there was an invisible, swirling energy
-                manifesting outwards from an incredible presence.{' '}
+                manifesting outwards from an incredible presence.
               </p>
               <p className='mb-6'>
                 You’d think that would equate to some boisterous tank of a human, but it doesn’t.

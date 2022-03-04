@@ -34,7 +34,6 @@ export default function Home() {
         <RSVP num={'03'} />
         <Answers num={'04'} />
         <Registry num={'05'} />
-
         <Memories num={'06'} />
         <Playlist num={'07'} />
         <Photos />
