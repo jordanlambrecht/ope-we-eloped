@@ -22,7 +22,7 @@ export default async function sendOnboarding(req, res) {
       email: 'bergenjohnston@gmail.com',
       name: 'Bergen Johnston',
     },
-    templateId: 'd-ff3d22ab87354da9955ae431307cbe60',
+    templateId: 'd-9ad09a97fbeb4e1ebff3cd143fd5c552',
   })
 
   console.log(res.status(200).json({ status: 'Ok' }))
