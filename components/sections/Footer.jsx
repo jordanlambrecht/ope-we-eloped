@@ -14,16 +14,15 @@ function Footer() {
               passHref
               target={'_blank'}
               rel=' noreferrer'
-              className='font-semibold border-b hover:opacity-80 duration-300'>
-              
-                here
-              
+              className='font-semibold duration-300 border-b hover:opacity-80'
+            >
+              here
             </Link>
             .
           </p>
         </InnerWrapper>
       </PageSection>
     </footer>
-  );
+  )
 }
 export default Footer

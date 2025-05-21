@@ -1,7 +1,7 @@
 import H2 from '@typography/H2'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
-import H3 from '../typography/H3'
+import H3 from '@typography/H3'
 import Button_Filled from '@parts/Button_Filled'
 function Details({ num }) {
   return (
@@ -10,9 +10,9 @@ function Details({ num }) {
         <H2 before={num} color={'black'}>
           Event Details
         </H2>
-        <div className='grid grid-cols-5 gap-14 mt-8'>
-          <div className='col-span-5 md:col-span-4 xl:grid-cols-3 pt-0 mt-0'>
-            <div className='mb-12 mt-0 pt-0 pb-2'>
+        <div className='grid grid-cols-5 mt-8 gap-14'>
+          <div className='col-span-5 pt-0 mt-0 md:col-span-4 xl:grid-cols-3'>
+            <div className='pt-0 pb-2 mt-0 mb-12'>
               <H3>When + Where</H3>
               <p>Saturday, April 9th, 2022 / 11am to 3pm-ish</p>
               <p>
@@ -32,14 +32,14 @@ function Details({ num }) {
               </p>
             </div>
 
-            <div className='mb-12 mt-4 py-2'>
+            <div className='py-2 mt-4 mb-12'>
               <H3>What to Wear</H3>
               <p>
                 <span className='font-semibold'>Come as you are.</span> This is brunch and we want
                 you to be comfortable**
               </p>
             </div>
-            <div className='mb-12 mt-4 py-2'>
+            <div className='py-2 mt-4 mb-12'>
               <H3>Where to Stay</H3>
               <p>
                 There are lots of options since our venue is located about 20 mins from Omaha and 30
@@ -53,7 +53,7 @@ function Details({ num }) {
               </div>
             </div>
 
-            <div className='text-sm text-black italic'>**Clothing is preferred</div>
+            <div className='text-sm italic text-black'>**Clothing is preferred</div>
           </div>
         </div>
       </InnerWrapper>

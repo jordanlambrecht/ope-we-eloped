@@ -73,16 +73,14 @@ function Memories({ num }) {
               name='title'
               placeholder='Story Title'
               required
-              className='col-span-1 text-black  w-full text-lg font-semibold border-2 rounded-md px-6 py-3 cursor-text   border-gray-200
-                    focus:ring-0 focus:border-black focus:border-2'
+              className='w-full col-span-1 px-6 py-3 text-lg font-semibold text-black border-2 border-gray-200 rounded-md cursor-text focus:ring-0 focus:border-black focus:border-2'
               {...register('title', {})}
             />
             <input
               type={'text'}
               name='author'
               placeholder='Author (optional)'
-              className='col-span-1 text-black text-opacity-75 w-full text-md font-normal italic border-2 rounded-md px-6 py-4 cursor-text   border-gray-200
-                    focus:ring-0 focus:border-black'
+              className='w-full col-span-1 px-6 py-4 italic font-normal text-black text-opacity-75 border-2 border-gray-200 rounded-md text-md cursor-text focus:ring-0 focus:border-black'
               {...register('author', {})}
             />
 
@@ -91,12 +89,11 @@ function Memories({ num }) {
               rows={6}
               placeholder='Story'
               required
-              className='text-black col-span-1 w-full text-md font-normal border-2 rounded-md px-6 py-4 cursor-text  border-gray-200
-                    focus:ring-0 focus:border-black'
+              className='w-full col-span-1 px-6 py-4 font-normal text-black border-2 border-gray-200 rounded-md text-md cursor-text focus:ring-0 focus:border-black'
               {...register('story', {})}
             />
             <div className='col-span-1'>
-              <button type='submit' value={'publish'} className='button my-2 px-8 float-right'>
+              <button type='submit' value={'publish'} className='float-right px-8 my-2 button'>
                 Publish &rarr;
               </button>
             </div>
