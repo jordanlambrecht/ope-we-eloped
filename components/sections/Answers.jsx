@@ -1,7 +1,6 @@
 import H2 from '@typography/H2'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
-import Image from 'next/image'
 function Registry({ num }) {
   return (
     <PageSection color={'cream-light'} id='answers'>
@@ -12,11 +11,11 @@ function Registry({ num }) {
 
         <ul className='grid grid-cols-1 gap-8'>
           <li>
-            <p className='font-semibold mt-0 pt-0  leading-none mb-0 pb-0'>Kids? We Bring?</p>{' '}
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none'>Kids? We Bring?</p>{' '}
             <p className='mt-1'>Only if they&apos;re chill.</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Weather ?</p>{' '}
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>Weather ?</p>{' '}
             <p className='mt-1'>
               Maybe.{' '}
               <a
@@ -30,11 +29,11 @@ function Registry({ num }) {
             </p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Can I do...</p>
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>Can I do...</p>
             <p className='mt-1'>Probably.</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Photographer?</p>{' '}
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>Photographer?</p>{' '}
             <p className='mt-1'>
               <a
                 href='https://instagram.com/intrepidvisuals'
@@ -47,25 +46,25 @@ function Registry({ num }) {
             </p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>
               Is there anything to do in Nebraska?
             </p>
             <p className='mt-1'>Yes – attend our brunch. See section above.</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>
               McDonald&apos;s Hashbrowns?
             </p>
             <p className='mt-1'>Yes.</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>
               Awkward Glass Clinking?
             </p>{' '}
             <p className='mt-1'>No.</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
+            <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>
               What’s the deal with covid-19?
             </p>
             <p className='mb-6'>

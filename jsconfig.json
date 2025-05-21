@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "noEmit": true,
+    "esModuleInterop": true,
     "paths": {
       "@parts/*": ["components/parts/*"],
       "@sections/*": ["components/sections/*"],

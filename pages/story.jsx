@@ -51,7 +51,7 @@ function OurStory() {
             <H3>How We Met</H3>
 
             <div>
-              <p className='font-semibold italic'>Bergen:</p>
+              <p className='italic font-semibold'>Bergen:</p>
               <p className='mb-6'>
                 As all great (millennial) love stories start - we matched on Tinder. It was summer
                 2020, and there wasn’t much going on.{' '}
@@ -89,7 +89,7 @@ function OurStory() {
           <div className='mt-12'>
             <H3>How We Knew</H3>
             <div>
-              <p className='font-semibold italic'>Bergen:</p>
+              <p className='italic font-semibold'>Bergen:</p>
               <p className='mb-6'>
                 Right before I left my house, I shared my location with a close friend (as
                 millennials do). I texted her to say that I was going on a date but definitely not
@@ -102,7 +102,7 @@ function OurStory() {
               <p className='mb-6'>Our first date lasted like, 10 hours.</p>
             </div>
             <div>
-              <p className='mt-12 font-semibold italic'>Jordan:</p>
+              <p className='mt-12 italic font-semibold'>Jordan:</p>
               <p className='mb-6'>
                 I knew from the second I pulled up to the bar and the tiniest human in the world got
                 out of her equally small Honda Fit. The first thought that popped into my head was,
@@ -135,15 +135,18 @@ function OurStory() {
         </InnerWrapper>
       </PageSection>
       <PageSection color='cream-light'>
-        <div className='max-h-screen grid grid-cols-2 lg:grid-cols-4 gap-1 mt-8 '>
+        <div className='grid max-h-screen grid-cols-2 gap-1 mt-8 lg:grid-cols-4 '>
           <div className='relative w-full aspect-w-1 aspect-h-1'>
             <Image
               placeholder='blur'
               blurDataURL={'/img/bergen-jordan-courthouse-5.jpg'}
               src={'/img/bergen-jordan-courthouse-5.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
           <div className='relative w-full aspect-w-1 aspect-h-1'>
@@ -152,8 +155,11 @@ function OurStory() {
               blurDataURL={'/img/bergen-jordan-courthouse-3s.jpg'}
               src={'/img/bergen-jordan-courthouse-3.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
           <div className='relative w-full aspect-square'>
@@ -162,8 +168,11 @@ function OurStory() {
               blurDataURL={'/img/bergen-jordan-courthouse-1.jpg'}
               src={'/img/bergen-jordan-courthouse-1.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
           <div className='relative w-full aspect-w-1 aspect-h-1'>
@@ -172,8 +181,11 @@ function OurStory() {
               blurDataURL={'bergen-jordan-courthouse-4.jpg'}
               src={'/img/bergen-jordan-courthouse-4.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
         </div>
@@ -181,7 +193,7 @@ function OurStory() {
           <div className='mt-12'>
             <H3>How We Got Married</H3>
             <div>
-              <p className='font-semibold italic'>Bergen:</p>
+              <p className='italic font-semibold'>Bergen:</p>
               <p className='mb-6'>It was summer 2021. </p>
               <p className='mb-6'>It was a Monday. </p>
               <p className='mb-6'>
@@ -204,7 +216,7 @@ function OurStory() {
               <p>Best Monday, ever.</p>
             </div>
             <div>
-              <p className='mt-12 font-semibold italic'>Jordan:</p>
+              <p className='mt-12 italic font-semibold'>Jordan:</p>
               <p className='mb-6'>
                 Bergen is leaving out a critical part for my benefit. What she didn&apos;t mention
                 is that I was having one of – not even exaggerating – the worst days of my life.

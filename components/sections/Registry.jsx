@@ -21,13 +21,18 @@ function Registry({ num }) {
           include the Child Advocacy Center, Voices of Hope, and the National Harm Reduction
           Coalition.
         </p>
-        <Link href={'https://www.zola.com/registry/opeweeloped'} passHref>
-          <a className='button' rel='noOpener' target={'_blank'}>
+        <Link
+          href={'https://www.zola.com/registry/opeweeloped'}
+          passHref
+          className='button'
+          rel='noOpener'
+          target={'_blank'}>
+          
             View Registry &rarr;
-          </a>
+          
         </Link>
       </InnerWrapper>
     </PageSection>
-  )
+  );
 }
 export default Registry

@@ -20,59 +20,71 @@ function Landing() {
     return () => {}
   })
   return (
-    <section className='w-screen bg-cream-light max-h-screen relative mt-0 px-14  py-24 coco'>
-      <div className='max-w-2xl md:max-w-xl lg:max-w-8xl mx-auto' ref={el}>
-        <h1 className=' relative font-semibold tracking-widest text-black text-2xl sm:text-4xl md:text-4xl opacity-0 fadeIn'>
+    <section className='relative w-screen max-h-screen py-24 mt-0 bg-cream-light px-14 coco'>
+      <div className='max-w-2xl mx-auto md:max-w-xl lg:max-w-8xl' ref={el}>
+        <h1 className='relative text-2xl font-semibold tracking-widest text-black opacity-0 sm:text-4xl md:text-4xl fadeIn'>
           Bergen + Jordan
         </h1>
 
-        <div className='max-h-screen grid grid-cols-2 lg:grid-cols-4 gap-1 mt-8  '>
-          <div className='relative w-full aspect-square  opacity-0 fadeIn'>
+        <div className='grid max-h-screen grid-cols-2 gap-1 mt-8 lg:grid-cols-4 '>
+          <div className='relative w-full opacity-0 aspect-square fadeIn'>
             <Image
               placeholder='blur'
               blurDataURL={'/img/jordan-bergen-bw-1.jpg'}
               src={'/img/jordan-bergen-bw-1.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
 
-          <div className='relative w-full aspect-w-1 aspect-h-1    opacity-0 fadeIn'>
+          <div className='relative w-full opacity-0 aspect-w-1 aspect-h-1 fadeIn'>
             <Image
               placeholder='blur'
               blurDataURL={'/img/jordan-bergen-bw-2.jpg'}
               src={'/img/jordan-bergen-bw-2.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
-          <div className='relative w-full aspect-w-1 aspect-h-1   opacity-0 fadeIn'>
+          <div className='relative w-full opacity-0 aspect-w-1 aspect-h-1 fadeIn'>
             <Image
               placeholder='blur'
               blurDataURL={'/img/jordan-bergen-bw-3.jpg'}
               src={'/img/jordan-bergen-bw-3.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
-          <div className='relative w-full aspect-w-1 aspect-h-1 opacity-0 fadeIn'>
+          <div className='relative w-full opacity-0 aspect-w-1 aspect-h-1 fadeIn'>
             <Image
               placeholder='blur'
               blurDataURL={'/img/jordan-bergen-bw-4.jpg'}
               src={'/img/jordan-bergen-bw-4.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
-              layout={'fill'}
-              objectFit={'cover'}
+              fill
+              className='object-cover'
+              style={{
+                maxWidth: '100%',
+              }}
             />
           </div>
         </div>
-        <div className='flex flex-col justify-end py-12  mt-12 w-full h-full font-black sm:hidden lg:flex opacity-0 fadeIn'>
-          <h1 className=' self-center text-black xl:scale-125 pr-20  z-20'>
+        <div className='flex flex-col justify-end w-full h-full py-12 mt-12 font-black opacity-0 sm:hidden lg:flex fadeIn'>
+          <h1 className='z-20 self-center pr-20 text-black xl:scale-125'>
             <span className='block text-8xl'>Ope.</span>
-            <span className='block text-right text-3xl -mr-16 relative'>We Eloped.</span>
+            <span className='relative block -mr-16 text-3xl text-right'>We Eloped.</span>
           </h1>
         </div>
       </div>

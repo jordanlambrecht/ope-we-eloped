@@ -56,25 +56,25 @@ function Navigation() {
   return (
     <>
       <nav
-        className='fixed top-0 right-0 mr-3 mt-3 z-50 bg-cream  p-2 block hover:cursor-pointer scale-75'
+        className='fixed top-0 right-0 z-50 block p-2 mt-3 mr-3 scale-75 bg-cream hover:cursor-pointer'
         onClick={() => handleHamToggle()}
       >
         <div id='hamburger-1' className={cn('hamburger h-full', { ['is-active']: hamToggle })}>
-          <span className='line w-10 h-1 bg-black block transition-all ease-in-out duration-300 my-2' />
-          <span className='line w-10 h-1 bg-black block transition-all ease-in-out duration-300 my-2' />
-          <span className='line w-10 h-1 bg-black block transition-all ease-in-out duration-300 my-2' />
+          <span className='block w-10 h-1 my-2 transition-all duration-300 ease-in-out bg-black line' />
+          <span className='block w-10 h-1 my-2 transition-all duration-300 ease-in-out bg-black line' />
+          <span className='block w-10 h-1 my-2 transition-all duration-300 ease-in-out bg-black line' />
         </div>
       </nav>
       <div
         ref={menu}
-        className='fixed top-0 left-0 w-full h-full overflow-hidden bg-black z-40 opacity-0 '
+        className='fixed top-0 left-0 z-40 w-full h-full overflow-hidden bg-black opacity-0 '
       >
-        <div className='relative w-full h-full flex flex-col justify-center'>
-          <nav className='mx-auto self-center'>
-            <ul className='text-cream grid grid-cols-1 gap-2'>
+        <div className='relative flex flex-col justify-center w-full h-full'>
+          <nav className='self-center mx-auto'>
+            <ul className='grid grid-cols-1 gap-2 text-cream'>
               <Link href={'/story'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[0] = element
@@ -85,7 +85,7 @@ function Navigation() {
               </Link>
               <Link href={'/#details'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[1] = element
@@ -96,7 +96,7 @@ function Navigation() {
               </Link>
               <Link href={'/#rsvp'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[2] = element
@@ -107,7 +107,7 @@ function Navigation() {
               </Link>
               <Link href={'/#answers'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[3] = element
@@ -118,7 +118,7 @@ function Navigation() {
               </Link>
               <Link href={'/#registry'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[4] = element
@@ -129,7 +129,7 @@ function Navigation() {
               </Link>
               <Link href={'/#memories'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[5] = element
@@ -140,7 +140,7 @@ function Navigation() {
               </Link>
               <Link href={'/#playlist'} passHref>
                 <li
-                  className='nav-item opacity-0 cursor-pointer text-xl tracking-widest pb-1 duration-300 not-italic hover:italic border-b-2 border-b-black hover:border-b-cream '
+                  className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
                     navItems.current[6] = element

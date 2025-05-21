@@ -1,5 +1,3 @@
-const React = require('react')
-const cn = require('classnames')
 module.exports = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
@@ -9,23 +7,67 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: [
-      'cdn.chec.io',
-      'pixelbakery.co',
-      'media.pixelbakery.com',
-      'pixelbakery.com',
-      'placeimg.com',
-      'scontent.cdninstagram.com',
-      'scontent-ort2-2.cdninstagram.com',
-      '*.cdninstagram.com',
-      'scontent-akl1-1.cdninstagram.com',
-      'i.scdn.co',
-      '*.scdn.co',
-      'scdn.co',
-      'mosaic.scdn.co',
-      'images234-focus-opensocial.googleusercontent.com',
-      'scontent.cdninstagram.com',
-      'scontent-akl1-1.cdninstagram.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.chec.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pixelbakery.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.pixelbakery.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pixelbakery.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'placeimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent-ort2-2.cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent-akl1-1.cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.spotifycdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.scdn.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scdn.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mosaic.scdn.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images234-focus-opensocial.googleusercontent.com',
+      },
     ],
   },
 }

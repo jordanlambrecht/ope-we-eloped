@@ -423,7 +423,7 @@ function RSVP() {
               {!secondGuest ? (
                 ''
               ) : (
-                <div className='flex justify-center lg:justify-start gap-6 py-4 my-3'>
+                (<div className='flex justify-center lg:justify-start gap-6 py-4 my-3'>
                   <input
                     type='button'
                     onClick={() => decrementCount()}
@@ -432,7 +432,6 @@ function RSVP() {
                       ' duration-300 w-14 text-center align-middle leading-none px-4 self-center text-2xl cursor-pointer focus:ring-0 border-2 rounded-md py-4  active:scale-97 bg-black bg-opacity-0 hover:bg-opacity-10 ',
                     )}
                   />
-
                   <input
                     {...register('additionalguests_count', { required: true })}
                     type='number'
@@ -451,7 +450,7 @@ function RSVP() {
                       ' duration-300 w-14 text-center align-middle leading-none px-4 self-center text-2xl cursor-pointer focus:ring-0 border-2 rounded-md py-4  active:scale-97 bg-black bg-opacity-0 hover:bg-opacity-10 ',
                     )}
                   />
-                </div>
+                </div>)
                 // <input
                 //   type='text'
                 //   placeholder='Full Name'
@@ -788,7 +787,7 @@ function RSVP() {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
 export default RSVP
