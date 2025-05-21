@@ -1,8 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import cn from 'classnames'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Link from 'next/link'
 import { usePlausible } from 'next-plausible'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function Navigation() {
   const menu = useRef(null)
