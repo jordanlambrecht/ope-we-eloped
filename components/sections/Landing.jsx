@@ -34,6 +34,7 @@ function Landing() {
               src={'/img/jordan-bergen-bw-1.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
@@ -48,6 +49,7 @@ function Landing() {
               src={'/img/jordan-bergen-bw-2.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
@@ -61,6 +63,7 @@ function Landing() {
               src={'/img/jordan-bergen-bw-3.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
@@ -74,6 +77,7 @@ function Landing() {
               src={'/img/jordan-bergen-bw-4.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',

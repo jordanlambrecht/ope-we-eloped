@@ -22,7 +22,7 @@ function OurStory_Landing() {
   return (
     <section className='relative w-screen max-h-screen py-24 mt-0 bg-cream-light px-14 '>
       <div className='max-w-2xl mx-auto md:max-w-xl lg:max-w-8xl' ref={el}>
-        <h1 className='text-2xl font-semibold tracking-widest text-black opacity-0  sm:text-4xl md:text-4xl fadeIn'>
+        <h1 className='text-2xl font-semibold tracking-widest text-black opacity-0 sm:text-4xl md:text-4xl fadeIn'>
           Our Story
         </h1>
 
@@ -34,6 +34,7 @@ function OurStory_Landing() {
               src={'/img/bergen-jordan-random-1.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
@@ -47,6 +48,7 @@ function OurStory_Landing() {
               src={'/img/bergen-jordan-random-2.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
@@ -60,6 +62,7 @@ function OurStory_Landing() {
               src={'/img/bergen-jordan-random-3.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
@@ -73,6 +76,7 @@ function OurStory_Landing() {
               src={'/img/bergen-jordan-random-4.jpg'}
               alt={'Jordan Lambrecht and Bergen Johnston'}
               fill
+              priority
               className='object-cover'
               style={{
                 maxWidth: '100%',
