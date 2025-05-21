@@ -1,10 +1,44 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const { withPlausibleProxy } = require('next-plausible')
+
+const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
     ignoreDuringBuilds: true,
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000',
+          },
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+        ],
+      },
+    ]
   },
   images: {
     remotePatterns: [
@@ -71,3 +105,7 @@ module.exports = {
     ],
   },
 }
+
+module.exports = withPlausibleProxy({
+  customDomain: 'https://analytics.jordy.world',
+})(nextConfig)
