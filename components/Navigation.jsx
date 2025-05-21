@@ -2,15 +2,22 @@ import { useState, useEffect, useRef } from 'react'
 import cn from 'classnames'
 import gsap from 'gsap'
 import Link from 'next/link'
+import { usePlausible } from 'next-plausible'
+
 function Navigation() {
   const menu = useRef(null)
   const [hamToggle, setHamToggle] = useState(false)
   const navItems = useRef([])
   const el = useRef()
   const q = gsap.utils.selector(el)
+  const plausible = usePlausible()
 
-  function handleHamToggle() {
-    setHamToggle(!hamToggle)
+  function handleHamToggle(closeOnly = false) {
+    if (closeOnly) {
+      setHamToggle(false)
+    } else {
+      setHamToggle(!hamToggle)
+    }
   }
 
   useEffect(() => {
@@ -53,10 +60,15 @@ function Navigation() {
     }
   }, [hamToggle])
 
+  const handleLinkClick = (linkName, href) => {
+    plausible('Navigation Link Click', { props: { linkName, href } })
+    handleHamToggle(true) // Close the menu
+  }
+
   return (
     <>
       <nav
-        className='fixed top-0 right-0 z-50 block p-2 mt-3 mr-3 scale-75 bg-cream hover:cursor-pointer'
+        className='fixed top-0 right-0 transition-scale duration-300 ease-in-out z-50 block p-4 mt-3 mr-3 scale-75 rounded-md hover:scale-[80%] bg-cream hover:cursor-pointer'
         onClick={() => handleHamToggle()}
       >
         <div id='hamburger-1' className={cn('hamburger h-full', { ['is-active']: hamToggle })}>
@@ -75,7 +87,7 @@ function Navigation() {
               <Link href={'/story'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('Our Story', '/story')}
                   ref={(element) => {
                     navItems.current[0] = element
                   }}
@@ -86,7 +98,7 @@ function Navigation() {
               <Link href={'/#details'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('Event Details', '/#details')}
                   ref={(element) => {
                     navItems.current[1] = element
                   }}
@@ -97,7 +109,7 @@ function Navigation() {
               <Link href={'/#rsvp'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('RSVP', '/#rsvp')}
                   ref={(element) => {
                     navItems.current[2] = element
                   }}
@@ -108,7 +120,7 @@ function Navigation() {
               <Link href={'/#answers'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('Answers', '/#answers')}
                   ref={(element) => {
                     navItems.current[3] = element
                   }}
@@ -119,7 +131,7 @@ function Navigation() {
               <Link href={'/#registry'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('Registry', '/#registry')}
                   ref={(element) => {
                     navItems.current[4] = element
                   }}
@@ -130,7 +142,7 @@ function Navigation() {
               <Link href={'/#memories'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('Memories', '/#memories')}
                   ref={(element) => {
                     navItems.current[5] = element
                   }}
@@ -141,7 +153,7 @@ function Navigation() {
               <Link href={'/#playlist'} passHref>
                 <li
                   className='pb-1 text-xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream '
-                  onClick={() => handleHamToggle(false)}
+                  onClick={() => handleLinkClick('Playlist', '/#playlist')}
                   ref={(element) => {
                     navItems.current[6] = element
                   }}
