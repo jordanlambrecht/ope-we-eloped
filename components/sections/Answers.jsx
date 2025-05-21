@@ -1,6 +1,7 @@
 import H2 from '@typography/H2'
 import InnerWrapper from '@parts/InnerWrapper'
 import PageSection from '@parts/PageSection'
+import Link from 'next/link'
 function Registry({ num }) {
   return (
     <PageSection color={'cream-light'} id='answers'>
@@ -18,14 +19,14 @@ function Registry({ num }) {
             <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>Weather ?</p>{' '}
             <p className='mt-1'>
               Maybe.{' '}
-              <a
+              <Link
                 href='https://weather.com'
                 target={'_blank'}
                 rel='noopener noreferrer'
                 className='border-b hover:text-opacity-75'
               >
                 www.weather.com
-              </a>
+              </Link>
             </p>
           </li>
           <li>
@@ -35,14 +36,14 @@ function Registry({ num }) {
           <li>
             <p className='pt-0 pb-0 mt-0 mb-0 font-semibold leading-none '>Photographer?</p>{' '}
             <p className='mt-1'>
-              <a
+              <Link
                 href='https://instagram.com/intrepidvisuals'
                 target={'_blank'}
                 rel='noreferrer'
                 className='border-b hover:text-opacity-75'
               >
                 @intrepidvisuals
-              </a>
+              </Link>
             </p>
           </li>
           <li>
@@ -69,14 +70,14 @@ function Registry({ num }) {
             </p>
             <p className='mb-6'>
               We will be following{' '}
-              <a
+              <Link
                 href='https://visitnebraska.com/coronavirus-information'
                 target={'_blank'}
                 rel='noreferrer'
                 className='border-b hover:text-opacity-75'
               >
                 current health guidelines
-              </a>{' '}
+              </Link>{' '}
               for Lincoln &amp; Omaha at our event. Guidelines change quickly, so check back for
               updates! Masks will be provided. Vaccinations are strongly recommended.
             </p>
