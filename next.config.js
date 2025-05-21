@@ -2,7 +2,7 @@
 const { withPlausibleProxy } = require('next-plausible')
 
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   productionBrowserSourceMaps: true,
   eslint: {
     ignoreDuringBuilds: true,
