@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 // Sections
 import Landing from '@sections/Landing'
 import RSVP from '@sections/RSVP'
@@ -23,10 +22,10 @@ export default function Home() {
       <Meta />
       <main>
         <Landing />
-        <div className=' flex-col justify-end py-12 w-full h-full font-black  hidden sm:flex lg:hidden'>
-          <h1 className=' self-center text-black xl:scale-125 pr-20  z-20'>
+        <div className='flex-col justify-end hidden w-full h-full py-12 font-black  sm:flex lg:hidden'>
+          <h1 className='z-20 self-center pr-20 text-black  xl:scale-125'>
             <span className='block text-8xl'>Ope.</span>
-            <span className='block text-right text-3xl -mr-16 relative'>We Eloped.</span>
+            <span className='relative block -mr-16 text-3xl text-right'>We Eloped.</span>
           </h1>
         </div>
         <OurStory num={'01'} />
